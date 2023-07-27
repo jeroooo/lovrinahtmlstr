@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="file:///C:/Users/Lovro/Desktop/Stranica/mk.png" href="file:///C:/Users/Lovro/Desktop/Stranica/mk.png">
+    <script src="https://kit.fontawesome.com/34779a2fca.js" crossorigin="anonymous"></script>
+    <style>
+    * {
+     box-sizing: border-box;
+    }
+
+    body {
+     font-family: Arial;
+     padding: 10px;
+     background: #383835 
+     
+    }
+
+    
+
+/* Header/Blog Title */
+    .header {
+     padding: 10px;
+     text-align: center;
+     background-image: url("file:///C:/Users/Lovro/Desktop/Stranica/Soul%20Training.png");
+     background-repeat:no-repeat;
+     background-size: 1500px 500px;
+     background-position: center;
+     
+     
+     
+
+    
+     
+     
+     
+    }
+
+    .header h1 {
+     font-size: 75px;
+     
+    }
+
+    h1 {
+     position: relative;
+     top: 15px;
+     left: 25px;
+     word-spacing: 325px;
+     z-index: 1;
+     color: red;
+     text-shadow: 1px 1px 2px grey, 0 0 5px white, 0 0 10px darkred;
+     
+    }
+
+    .p2 {
+        color: #383835;
+        font-weight: bold;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .p1 {
+        font-family: 'Brush Script MT', cursive;
+        font-size: 30px;
+        position: relative;
+        top: 30px;
+        color: red;
+    }
+
+/* Style the top navigation bar */
+    ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+     border-radius: 25px;
+    }
+
+    li {
+     float: left;
+     padding: 10px;
+    }
+
+/* Style the topnav links */
+    li a, .dropbtn {
+     display: inline-block;
+
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     border-radius: 25px;
+     background-color: black;
+     
+    }
+
+/* Change color on hover */
+    li a:hover, .dropdown:hover .dropbtn {
+     background-color: red;
+    }
+
+    li.dropdown {
+     display: inline-block;
+    }
+
+    .dropdown-content {
+     display: none;
+     
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     border-radius: 25px;
+    }
+
+    .column2 {
+     float: left;
+     width: 50%;
+     padding: 50px;
+     height: 500px; /* Should be removed. Only for demonstration */
+     text-align: center;
+     border: 3px solid darkgrey;
+     margin-top: 40px;
+    }
+
+    
+    
+
+    .dropdown-content a {
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     border-radius: 25px;
+     text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: red;
+       
+    }
+
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+
+      
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+     float: left;
+     width: 33.33%;
+     padding: 50px;
+     height: 300px; /* Should be removed. Only for demonstration */
+     text-align: center;
+     border: 3px solid darkgrey;
+     margin-top: 20px;
+    }
+
+    .column3 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 66%;
+        height: 400px;
+        padding: 20px;
+        border-radius: 25px;
+        margin-top: 700px;
+
+        
+    }
+
+    .column4 {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+        height: 600px;
+        padding: 20px;
+        border-radius: 25px;
+        margin-top: 70px;
+        background-color: #777;
+        float: left;
+        text-align: center;
+        border: 5px solid #000000;
+        perspective: 1000px;
+    }
+
+    .column4-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+    }
+
+    .column4:hover .column4-inner {
+     transform: rotateY(180deg);
+    }
+
+    .column4-front, .column4-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+    }
+
+    .column4-front {
+     background-color: #bbb;
+     color: black;
+    }
+
+    .column4-back {
+     background-color: #555;
+     color: white;
+     transform: rotateY(180deg);
+    }
+
+    div.gallery {
+     margin: 5%;
+     
+     float: left;
+     width: 180px;
+     margin-bottom: 20px;
+     margin-top: 40px;
+     margin-left: auto;
+     margin-right: auto;
+     
+    }
+
+    div.gallery:hover {
+     border: 1px solid #777;
+    }
+
+    div.gallery img {
+     width: 100%;
+     height: auto;
+     
+     margin-right: auto;
+     
+     
+    }
+
+    div.desc {
+     padding: 15px;
+     text-align: center;
+    }
+
+    .tekst {
+        font-size: 20px;
+        font-weight: bold;
+        color: #383835;
+    }
+
+    .tekst2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #383835;
+        text-align: justify;
+    }
+
+    .tekst3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #383835;
+        text-align: left;
+        padding-left: 300px;
+        
+    }
+
+    .tekst4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #383835;
+        text-align: center;
+    }
+
+    a {
+        color: red;
+    }
+
+    img.a {
+        vertical-align: text-top;
+    }
+
+    img.b {
+        vertical-align: text-top;
+        border-radius: 50%;
+    }
+
+    img.c {
+        vertical-align: baseline;
+        margin-right: 100px;
+    }
+
+    #myDiv {
+     transform: rotateY(150deg);
+    }
+
+/* Clear floats after the columns */
+    .row:after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+    .leftcolumn {   
+     float: right;
+     width: 75%;
+    }
+
+/* Right column */
+    .rightcolumn {
+     float: left;
+     width: 25%;
+     
+     padding-left: 20px;
+    }
+
+/* Fake image */
+    .fakeimg {
+     background-image: url("file:///C:/Users/Lovro/Pictures/img/Lovro.jpg");
+     width: 100%;
+     padding: 20px;
+    }
+
+    .fakeimg2 {
+     background-image: url("file:///C:/Users/Lovro/Pictures/img/Lovro.jpg");
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+     width: 100%;
+     padding: 20px;
+    }
+
+    .fakeimg1 {
+     background-image: url("file:///C:/Users/Lovro/Desktop/Stranica/teretana.jpg");
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     background-size: 33% 100%;
+     background-repeat:no-repeat;
+     width: 100%;
+     padding: 20px;
+    }
+
+/* Add a card effect for articles */
+    .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+    }
+
+/* Clear floats after the columns */
+    .row::after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+
+/* Footer */
+    .footer {
+     padding: 20px;
+     text-align: center;
+     background: #ddd;
+     margin-top: 20px;
+    }
+
+    .footerContainer {
+        width: 100%;
+        padding: 70px 30px   20px ;
+    }
+
+    .socialicons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialicons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .socialicons a i{
+        font-size: 2em;
+        color: black;
+        opacity: 0.9;
+    }
+/* Hover effect on icons */
+    .socialicons a:hover{
+        background-color: #111;
+        transition: 0.5s;
+    }
+
+    .socialicons a:hover i{
+        color: white;
+        transition: 0.5s;
+    }
+
+    .footerNav{
+        margin: 30px 0;
+    }
+
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerNav ul li a{
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+
+    .footerBottom{
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footerBottom p{
+        color: white;
+    }
+
+    .designer {
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+         width: 100%;
+         padding: 0;
+        }
+    }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+        li a {
+         float: none;
+         width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .header {
+         font-size: 75px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+         width: 100% ;
+        }
+        .footerNav ul {
+         flex-direction: column ;
+        }
+
+        .footerNav ul li{
+         width: 100% ;
+         text-align: center;
+         margin: 10px;
+        }
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+        .column {
+         width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .column2 {
+         width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .column3 {
+         width: 100%;
+        }
+        .column4 {
+         width: 100%;
+        }
+
+    }
+    
+        
+    </style>
+</head>
+<body> 
+
+      
+<ul>
+  <li><a href="C:\Users\Lovro\Desktop\Stranica\p" target="_self">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#news">Recenzije</a></li>
+  <li><a href="#news">Online treninzi</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kontakti</a>
+    <div class="dropdown-content">
+     <a href="#">Instagram</a>
+     <a href="#">Facebook</a>
+     <a href="#">Whatsapp</a>
+    </div>
+  </li>
+</ul>
+<div class="header">
+    
+    <img src="file:///C:/Users/Lovro/Desktop/Stranica/Soul%20Training.png" alt="Naslovnica" width="1500" height="500";>
+    
+    
+
+    
+</div>
+
+
+      
+
+
+<div class="row">
+
+    <div class="column" style="background-color:#aaa;">
+        <img class="a" src="file:///C:/Users/Lovro/Desktop/Stranica/dumbbell-icon.png" alt="dumbbell" width="256" height="96">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="tekst">POVEĆANJE APSOLUTNE SNAGE</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <img class="a" src="file:///C:/Users/Lovro/Desktop/Stranica/weight-decrease-icon.png" alt="dumbbell" width="128" height="130">
+        <br>
+        <br>
+        <br>
+        
+        <p class="tekst">GUBITAK TJELESNE MASTI</p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+        <img class="a" src="file:///C:/Users/Lovro/Desktop/Stranica/arm-dumbbell-icon.png" alt="dumbbell" width="88" height="113">
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="tekst">POVEĆANJE MIŠIĆNE MASE</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column2" style="background-color: #aaa;">
+        <img class="b" src="file:///C:/Users/Lovro/Pictures/Nova%20mapa/4728d86e0cc2110f5381.jpeg" alt="profilna" width="150" height="150">
+        <br>
+        <br>
+        <br>
+        <p class="tekst">CERTIFICIRANI FITNESS INSTRUKTOR
+        <p class="tekst"> <a class="tekst2">GRUPNI</a> FITNESS INSTRUKTOR</p>
+        <p class="tekst">ONLINE TRENINZI</p>
+    </div>
+    <div class="column2" style="background-color: #bbb;">
+        <p class="p2">O MENI...</p>
+        <p class="tekst">Zovem se Lovro Blagić. 
+        <p class="tekst2">Imam 17 godina i bavim se profesijom fitness trenera 10+ godina. Pričam hrvatski, engleski i ponešto njemačkog. Treninge održavam u teretani BBK Marsonia Gym. Osim toga, održavam i online treninge. </p>
+    </div>
+
+
+</div>
+
+<div class="row">
+
+    <div class="column4">
+
+        <div class="column4-inner">
+            <div class="column4-front">
+              <img src="file:///C:/Users/Lovro/Desktop/Stranica/post1.png" alt="Paris" style="width:500px;height:500px">
+            </div>
+            <div class="column4-back">
+              <h2>Paris</h2>
+              <p>Pero Perić je uspio u 3 godine izgubiti 5 kilograma!</p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+  
+    <div class="column4">
+
+        <div class="column4-inner">
+            <div class="column4-front">
+              <img src="file:///C:/Users/Lovro/Desktop/Stranica/post1.png" alt="Paris" style="width:500px;height:500px">
+            </div>
+            <div class="column4-back">
+              <h2>Paris</h2>
+              <p>Sara Blagić je uspila u 3 godine izgubiti 5 kilograma!</p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+  
+    
+</div>
+
+<div class="row">
+
+    <div class="column4">
+
+        <div class="column4-inner">
+            <div class="column4-front">
+              <img src="file:///C:/Users/Lovro/Desktop/Stranica/post1.png" alt="Paris" style="width:500px;height:500px">
+            </div>
+            <div class="column4-back">
+              <h2>Paris</h2>
+              <p>Sara Blagić je uspila u 3 godine izgubiti 5 kilograma!</p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+  
+    <div class="column4">
+
+        <div class="column4-inner">
+            <div class="column4-front">
+              <img src="file:///C:/Users/Lovro/Desktop/Stranica/post1.png" alt="Paris" style="width:500px;height:500px">
+            </div>
+            <div class="column4-back">
+              <h2>Paris</h2>
+              <p>Sara Blagić je uspila u 3 godine izgubiti 5 kilograma!</p>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+  
+    
+</div>
+
+
+<div class="row">
+    <div class="column3" style="background-color: #aaa;">
+        <p class="tekst3"> <img class="c" src="file:///C:/Users/Lovro/Desktop/Stranica/maps-pin-black-icon.png" alt="pin" width="48" height="69"> GDJE? </p>
+        
+        
+        
+        <p class="tekst3"> <img class="c" src="file:///C:/Users/Lovro/Desktop/Stranica/clock-icon.png" alt="clock" width="48" height="48"> KADA? </p>
+        
+        
+        <p class="tekst3"> <img class="c" src="file:///C:/Users/Lovro/Downloads/clipboard-question-icon.png" alt="questionmark" width="55" height="64" >KAKO?</p>
+    </div>
+</div>
+
+      
+
+      
+<footer>
+    <div class="footerContainer">
+        <div class="socialicons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Our team</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed <span class="designer">L. Blagić</span></p>
+    </div>
+</footer>
+      
+
+
+</body>
+</html>
